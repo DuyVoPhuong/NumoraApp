@@ -1,0 +1,105 @@
+Tech Stack hiện đại nhất 2025
+🧩 Frontend (Mobile App)
+🔷 Flutter 3.x (với Dart 3) – công nghệ hàng đầu 2025 cho mobile app
+
+Ưu điểm:
+
+Viết 1 lần chạy iOS + Android + Web
+
+Hỗ trợ tốt cho animation, UI đẹp
+
+Hệ sinh thái mạnh: riverpod, go_router, flutterfire...
+
+📌 Thư viện nên dùng:
+
+riverpod (v2): quản lý trạng thái mạnh mẽ
+
+go_router: điều hướng route
+
+flutterfire: tích hợp Firebase mới nhất
+
+intl, dartx: xử lý ngày sinh, chuỗi, số
+
+flutter_gen: tự động sinh assets
+
+flutter_native_splash, flutter_launcher_icons: setup nhanh splash/icon
+
+🔶 Backend (AI + Business Logic)
+Option 1: Cloud Function + Firebase
+Firebase Cloud Functions (Node.js v20+)
+
+Ưu điểm: dễ deploy, auto scale, free-tier tốt
+
+Dùng để:
+
+Tính toán thần số học
+
+Gọi GPT API
+
+Gửi push notification, lưu log
+
+🛢️ Database
+Firebase Firestore (NoSQL, Realtime)
+Lưu lịch sử xem bói, user profile, kết quả
+
+Đồng bộ tốt với Flutter
+
+Supabase (PostgreSQL) – Nếu bạn muốn full SQL, open-source
+🔐 Authentication
+Firebase Authentication
+
+Google, Apple ID, Email/Password
+
+Dễ triển khai + quản lý người dùng
+
+🧠 Tích hợp AI
+OpenAI GPT-4o hoặc Claude 3 Sonnet
+
+Tạo đoạn diễn giải dựa trên chỉ số (phong cách riêng)
+
+Ví dụ prompt:
+
+diff
+Copy
+Edit
+Phân tích tính cách cho người có:
+- Đường đời: 7
+- Sứ mệnh: 9
+- Linh hồn: 6
+Viết theo văn phong nhẹ nhàng, truyền cảm hứng.
+☁️ Hosting / Deploy
+Firebase Hosting – host landing page nếu có
+
+Vercel / Cloudflare Pages – nếu dùng Next.js/React cho phần landing
+
+Railway / Render / Supabase Edge Function – nếu không dùng Firebase
+
+🔔 Push Notification
+Firebase Cloud Messaging (FCM): gửi thông báo hằng ngày
+
+Ví dụ: “Ngày hôm nay là ngày cá nhân số 2 – hãy kiên nhẫn và thấu cảm”
+
+📊 Analytics
+Firebase Analytics – theo dõi hành vi người dùng
+
+Mixpanel – nếu cần phân tích chuyên sâu
+
+📱 2. Kiến trúc app gợi ý
+plaintext
+Copy
+Edit
+Mobile App (Flutter)
+│
+├── Auth (Firebase)
+├── Call API (Cloud Function / GPT)
+├── Hiển thị chỉ số (số 1–9, 11, 22...)
+├── Lưu kết quả (Firestore)
+├── Gửi notification (FCM)
+└── Share / Export PDF
+🧪 MVP Gợi Ý (phát triển trong 2-4 tuần)
+Chức năng	Mức độ ưu tiên
+Nhập ngày sinh → tính số thần số học	🎯 Bắt buộc
+Diễn giải AI theo số	🔥 Gây ấn tượng
+Lưu kết quả, chia sẻ lên mạng xã hội	✅ Cơ bản
+Đăng nhập Google/Facebook	⏳ Tuỳ chọn
+Giao diện nhẹ đẹp, splash screen	🎨 Tối ưu UX
